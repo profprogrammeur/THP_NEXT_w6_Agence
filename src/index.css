@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+ html main {
+     height: 100vh !important;
+ }
+ 
+a:link { text-decoration: none ; }
+
+a:hover {color:red}
+
+
+
+:root {
+  --main-bg-color: rgb(102, 66, 66);
+}
+
+.body-dark {
+  background-color: var(--main-bg-color);
+  color:wheat !important;
+}
+
+.body-light {
+  background-color: wheat;
+  color: black;
+}
+
+.ul-light {
+  color:black !important;
+}
+
+.ul-dark {
+  color:wheat !important;
+}
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* background-color: lightblue; */
+}
+
+
+/* .body-light {
+  background-color: $color-bg-light;
+  color: $color-bg-dark;
+} */
+
+.button-dark {
+  background-color: var(--main-bg-color);
+  color: white;
+}
+
+.button-light {
+  background-color: wheat;
+  color: black;
+  height: 100px !important;
+}
+
+.navbar-light{
+  background-color: lightblue;
+  color: black;
+}
+
+.navbar-dark {
+  background-color: darkblue !important;
+  color: white !important;
+}
+
+
+button:hover {
+    background-color: rgba(255, 0, 0, 1);
+    width: 170px !important;
+}
+
+button {
+  transition: all 1s ease-in-out;
+}
+
+
+a {
+  color: black;
+}
