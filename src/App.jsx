@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from 'react-dom/client';
 import './App.css';
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom'
@@ -34,18 +34,24 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ darkMode, toggleDarkMode }} >
-      <BrowserRouter>
+      <Router>
         <Navbar />
         <main className={darkMode ? "body-dark" : "body-light"}>
+          <img src={logo} className="App-logo" alt="logo" />
+
           <Routes>
-            <Route path="/book/:bookSlug" element={<Book />} />
+            {/* <Route path="/book/:bookSlug" element={<Book />} /> */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/works" element={<Doc />} />
+            <Route path="/works" element={<Doc />} >
+              <Route
+                path="/works/:bookSlug"
+                element={<Book />}
+              />
+            </Route>
           </Routes>
-          <img src={logo} className="App-logo" alt="logo" />
         </main>
-      </BrowserRouter>
+      </Router>
     </ThemeContext.Provider>
    
   );

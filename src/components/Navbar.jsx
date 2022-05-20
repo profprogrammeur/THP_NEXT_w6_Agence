@@ -13,14 +13,14 @@ const Navbar = () => {
     
     <div className={ darkMode ? "navbar navbar-dark" : "navbar navbar-light"}>
       {/* {books.map(book => <ul key={book.slug}><Link to={`/book/${book.slug}`}>{book.title}</Link></ul>)} */}
-      <ul className={darkMode ? "ul-dark" : "ul-light"}>
-          <Link to="/">Home</Link>
+      <ul >
+        <Link to="/" className={darkMode ? "ul-dark" : "ul-light"}>Home</Link>
         </ul>
         <ul>
-          <Link to="/about">L'agence</Link>
+        <Link to="/about" className={darkMode ? "ul-dark" : "ul-light"}>L'agence</Link>
         </ul>
         <ul>
-          <Link to="/works">Projets</Link>
+        <Link to="/works" className={darkMode ? "ul-dark" : "ul-light"}>Projets</Link>
         </ul>
         <ul>
           <button

@@ -1,24 +1,30 @@
 /* .App {
   text-align: center;
 } */
-
+/* @keyframes slidein {
+  from { left: 0; } to { left: 100px; }
+} */
 .App-logo {
   height: 10vmin;
   pointer-events: none;
+  /* margin-left: 200px; */
+  /* animation: slidein 3s linear 1s infinite alternate ; */
 }
 
+
+
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+   0% {
+    transform: translateX(0px) rotate(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(300px) rotate(360deg);
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 1s linear;
+    animation: App-logo-spin infinite 2s linear alternate;
   }
 }
 

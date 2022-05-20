@@ -6,9 +6,9 @@ body {
      height: 100vh !important;
  }
  
-a:link { text-decoration: none ; }
+/* a:link { text-decoration: none ; } */
 
-a:hover {color:red}
+a :hover {color:red}
 
 
 
