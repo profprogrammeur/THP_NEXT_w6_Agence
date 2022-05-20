@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/THP_NEXT_w6_Agence/static/css/main.539cc5f9.css",
+    "main.js": "/THP_NEXT_w6_Agence/static/js/main.90e39e75.js",
+    "static/media/logo.svg": "/THP_NEXT_w6_Agence/static/media/logo.a68629a8cddab247d47374197e435b83.svg",
+    "index.html": "/THP_NEXT_w6_Agence/index.html",
+    "main.539cc5f9.css.map": "/THP_NEXT_w6_Agence/static/css/main.539cc5f9.css.map",
+    "main.90e39e75.js.map": "/THP_NEXT_w6_Agence/static/js/main.90e39e75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.539cc5f9.css",
+    "static/js/main.90e39e75.js"
+  ]
+}
