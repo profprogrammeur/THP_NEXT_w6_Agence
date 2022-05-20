@@ -1,18 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import books from '../data/books';
 import { useContext } from "react";
 import { ThemeContext } from "../ThemeContext"
 
 const Navbar = () => {
   const { darkMode, toggleDarkMode } = useContext(ThemeContext);
-  // console.log(books)
-  // const bookList = )books.map(book => <ul>{book.slug}</ul>
-  return(
 
-    
+  return( 
     <div className={ darkMode ? "navbar navbar-dark" : "navbar navbar-light"}>
-      {/* {books.map(book => <ul key={book.slug}><Link to={`/book/${book.slug}`}>{book.title}</Link></ul>)} */}
       <ul >
         <Link to="/" className={darkMode ? "ul-dark" : "ul-light"}>Home</Link>
         </ul>
@@ -30,8 +25,6 @@ const Navbar = () => {
         >{darkMode ? "DAY" : "NIGHT"}</button>
         </ul>
       </div>
- 
-
   )
 };
 

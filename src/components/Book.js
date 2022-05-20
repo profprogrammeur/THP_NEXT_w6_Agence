@@ -1,19 +1,10 @@
 import {useParams} from 'react-router-dom'
 import { useState, useEffect } from "react";
 import books from '../data/books';
-import { useContext } from "react";
-import { ThemeContext } from "../ThemeContext"
-
-
 
 const Book = () => {
-  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
   const { bookSlug } = useParams()
   const [currentBook, setCurrentBook] = useState({
-    // slug: "Platon",
-    // title: "Platon",
-    // author: "Le challenge",
-    // description: "Platon a décidé de se lancer à l'époque malgré une crise économique difficile."
   })
 
   useEffect(() => {
