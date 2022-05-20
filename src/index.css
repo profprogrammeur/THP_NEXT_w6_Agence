@@ -10,15 +10,16 @@ a :hover {color:red}
 
 :root {
   --main-bg-color: rgb(102, 66, 66);
+  --light-color: wheat;
 }
 
 .body-dark {
   background-color: var(--main-bg-color);
-  color:wheat !important;
+  color: var(--light-color) !important;
 }
 
 .body-light {
-  background-color: wheat;
+  background-color:  var(--light-color);
   color: black;
 }
 
@@ -27,7 +28,7 @@ a :hover {color:red}
 }
 
 .ul-dark {
-  color:wheat !important;
+  color: var(--light-color) !important;
 }
 
 .navbar {
@@ -43,7 +44,7 @@ a :hover {color:red}
 }
 
 .button-light {
-  background-color: wheat;
+  background-color:  var(--light-color);
   color: black;
   height: 100px !important;
 }
@@ -59,7 +60,7 @@ a :hover {color:red}
 }
 
 button:hover {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: red;
     width: 170px !important;
 }
 
